@@ -13,7 +13,7 @@ export const AgencySelectors={
     accountLogoField:'input[accept="image/*"]',
     imageUploadModal:'div[id="modal"]',
     imageUploadSaveBtn:'//button//div[text()="Save"]',
-    createAccountBtn:'//div[contains(text(), "Create Account")]//parent::button',//'//button//div[text()="Create Account"]',
+    createAccountBtn:'//div[contains(text(), "Create Account")]//parent::button',
     agencySuccessMessage:'//div[text()="Agency Created Successfully!"]',
     addClientBtn:'//button//div[text()="Add Client"]',
     clientName:'input[placeholder="Enter client name"]',
@@ -32,7 +32,6 @@ export const AgencySelectors={
     selectTaxBasis:'#react-select-7-option-0',
     stateOfIncorporationDropDown:'//span[text()="State Of Incorporation"]//parent::div//div[@class="Input_inputContainer__AqMye"]',
     selectStateOfIncorporation:'#react-select-8-option-0',
-
     hubAnalyticUser:'//span[text()="HUB Analytics Users"]',
     addHubAnalyticUserBtn:'//button//div[text()="Add HUB Analytics User"]',
     hubAnalyticUserFirstName:'input[placeholder="Enter First Name"]',
@@ -49,6 +48,7 @@ export const AgencySelectors={
     publishingRequirmentEditBtn:'//button//div[text()="Edit"]',
     publishingRequirmentsCheckBoxes:'//div[@class="flex flex-col w-full"]//div//div//div//div/*[@stroke="currentColor"]',
     saveBtn:'//button//div[text()="Save"]',
+    publishingRequirmentUpdatedSuccessMessage:'//div[text()="Publishing Requirements Updated!"]',
     agencyFilterDropDown:'//div[text()="All"]',
     selectActiveFilter:'#react-select-2-option-1',
     selectDeactivetedFilter:'#react-select-2-option-2',
@@ -56,7 +56,7 @@ export const AgencySelectors={
     activateModal:'//span[text()="Activate Account"]',
     yesBtn:'//button//div[text()="Yes"]',
     deactivateAgencySuccessMessage:'//div[text()="Deactivated Successfully."]',
-    verifyAgencyIsDeactivated:'//span[text()="automation testing 123"]//parent::div//parent::div//div[text()="Deactivated"]',
+    activateAgencySuccessMessage:'//div[text()="Activated Successfully."]',
 
 
 }

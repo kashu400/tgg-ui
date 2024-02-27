@@ -38,6 +38,4 @@ describe('Login Feature', () => {
     loginPage.submitLoginForm(Cypress.env('userName'), Cypress.env('password'))
     loginPage.verifyManageAgencyPageIsDisplayed("Manage Agency")
   })
-  
-
 })
