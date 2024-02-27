@@ -1,12 +1,8 @@
-import { loginSelectors } from "../elements/login_elements";
 export class LoginPage {
  open(url){
     cy.visit(url)
     cy.get("button[type='button']").click()
  }
-//  clickLoginBtn(){
-//     cy.get(loginSelectors.loginBtn).click()
-//  }
  submitEmptyLoginForm(){
    const creds = {}
 
@@ -14,7 +10,6 @@ export class LoginPage {
       const loginNextBtn='#next'
       cy.get(loginNextBtn).click()
    })
-   //  cy.get(loginSelectors.loginNextBtn).click()
  }
  submitLoginFormWithPasswordOnly(password){
    const creds = {password}
@@ -86,7 +81,6 @@ export class LoginPage {
    })
  }
  verifyManageAgencyPageIsDisplayed(manageAgencyPageTitle){
-  //  cy.xpath(loginSelectors.manageAgencyPageHeader).should('be.visible').and('contain.text', 'Agency Accounts')
     cy.title().should('eq',manageAgencyPageTitle)
  }
  login(url, username, password){

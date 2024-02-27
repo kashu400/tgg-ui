@@ -1,7 +1,7 @@
 const randomString = Math.floor(Math.random() * 100000).toString().padStart(5, '0')
 import { faker } from '@faker-js/faker';
 export const TestData={
-    //Client spec test data
+    //Client test data
  instituationName: faker.internet.displayName(),
  contactFirstName: faker.person.firstName(),
  contactEmail: faker.internet.email({ firstName: 'Jeanne', lastName: 'Doe' }),
@@ -41,8 +41,9 @@ export const TestData={
  deleteDocName: faker.lorem.words(2),
  viewDocName: faker.lorem.words(3),
  renameFolder: `Renamed Folder ${randomString}`,
+ renameFile: faker.system.commonFileName('txt'),
 
- //Agency spec test data
+ //Agency test data
  agencyName: faker.internet.displayName(),
  deactiveAgencyName: faker.lorem.words(2),
  agencyAddress: faker.location.streetAddress(),
@@ -56,4 +57,13 @@ export const TestData={
  orgBusinessOverview: faker.lorem.sentences(4),
  hubAnalyticUserFirstName: faker.person.firstName(),
  hubAnalyticUserLastName: faker.person.lastName(),
+ hubAnalyticOwnerEmail: faker.internet.email({ firstName: 'John', lastName: 'wick' }),
+ hubAnalyticFullAccessEmail: faker.internet.email({ firstName: 'den', lastName: 'mate' }),
+ hubAnalyticStandardEmail: faker.internet.email({ firstName: 'hamann', lastName: 'vehicle' }),
+ hubAnalyticReadOnlyEmail: faker.internet.email({ firstName: 'mercedes', lastName: 'benz' }),
+
+ //Global user test data
+ firstName: faker.person.firstName(),
+ lastName: faker.person.lastName(),
+ Email: faker.internet.email({ firstName: 'John', lastName: 'wick' }),
 }
